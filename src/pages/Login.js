@@ -8,26 +8,26 @@ export default function Login() {
     const navigation = useNavigation();
     return (
       <View style={styles.container}>
-          <Text style={styles.Login}>Login</Text>
+        <View style={styles.TelaLogin}> 
+        <Text style={styles.Login}>Login</Text>
+
+        <Text style={styles.Welcome}>Welcomeback!</Text>
   
-          <TextInput style={styles.InputName} placeholder="E-mail" />
-          <TextInput
-            style={styles.InputName}
-            placeholder="Senha"
-            secureTextEntry={true}
-          />
-  
-          <ButtonComponents
-            estilo={styles.BtnLogin}
-            onpress={() => alert("hello")}
-            title="ENTRAR"
-          />
-  
-          <ButtonComponents
-            estilo={styles.BtnCds}
-            onPress={() => navigation.navigate("Cadastro")}
-            title="Cadastre-se aqui!"
-          />
+  <TextInput style={styles.InputName} placeholder="E-mail" />
+  <TextInput
+    style={styles.InputName}
+    placeholder="Senha"
+    secureTextEntry={true}
+  />
+
+  <ButtonComponents
+    styles={[styles.BtnLogin, {marginTop: 20}]}
+    onpress={() => alert("hello")}
+    title="ENTRAR"
+  />
+
+        </View>
+        
           </View>
     );
   }

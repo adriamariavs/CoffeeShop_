@@ -1,22 +1,39 @@
-import { View, ScrollView } from "react-native";
+import { View } from "react-native";
 import { styles } from "../style/Styles";
-import TextComponent from "../componentes/TextComponent";
-import ButtonComponents from "../componentes/ButtonComponents";
-import ImgComponent from "../componentes/ImgComponent";
 import { useNavigation } from "@react-navigation/native";
+//Importando Componentes:
+import ButtonComponents from "../componentes/ButtonComponents";
+import TextComponent from "../componentes/TextComponent";
+import ImgComponent from "../componentes/ImgComponent";
 
 export default function Home() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <ScrollView>
       <ImgComponent style={styles.ImgLogo} imagem={require("../image/logo.png")}/>
-            <ButtonComponents
-              estilo={styles.BtnLogin_Home}
+      <TextComponent texto="Obter o melhor café da cidade?" styles={styles.TextHome}/>
+
+      <View style={{flexDirection: 'row'}}>
+   <ButtonComponents
+              styles={styles.BtnLoginHome}
               onPress={() => navigation.navigate("Login")}
-              title="LOGIN"
+              title= "LOGIN"
               />
-          </ScrollView>
+              
+              <ButtonComponents
+              styles={styles.BtnCdsHome}
+              onPress={() => navigation.navigate("Cadastro")}
+              title= "Cadastrar-se"
+              />
+
+            
+      </View>
+      <ButtonComponents
+              styles={styles.BtnSaiba}
+              onPress={() => navigation.navigate("Saiba")}
+              title= "Saiba mais!"
+              />
+         
     </View>
   );
 }
