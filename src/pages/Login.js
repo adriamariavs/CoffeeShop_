@@ -9,9 +9,8 @@ export default function Login() {
     return (
       <View style={styles.container}>
         <View style={styles.TelaLogin}> 
-        <Text style={styles.Login}>Login</Text>
 
-        <Text style={styles.Welcome}>Welcomeback!</Text>
+        <Text style={styles.Welcome}>Seja bem-vindo!</Text>
   
   <TextInput style={styles.InputName} placeholder="E-mail" />
   <TextInput
@@ -22,8 +21,8 @@ export default function Login() {
 
   <ButtonComponents
     styles={[styles.BtnLogin, {marginTop: 20}]}
-    onpress={() => alert("hello")}
-    title="ENTRAR"
+    onPress={() => navigation.navigate("Menu")}
+    title="Login"
   />
 
         </View>

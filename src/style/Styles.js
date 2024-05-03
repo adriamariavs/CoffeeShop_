@@ -74,7 +74,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     height: 30,
     width: 200,
-    backgroundColor: '#755645',
+    backgroundColor: '#d4a57b',
     borderRadius: 25,
     borderBottomWidth: 1,
     borderColor: 'black',
@@ -82,10 +82,10 @@ export const styles = StyleSheet.create({
   },
 
   Welcome: {
-fontSize: 25,
-right: 70 ,
-fontWeight: 'bold',
-marginBottom: 40,
+   fontSize: 25,
+   right: 70 ,
+   fontWeight: 'bold',
+   marginBottom: 40,
   },
 
   TelaLogin:{
@@ -127,7 +127,7 @@ marginBottom: 40,
     justifyContent: 'center',
     height: 30,
     width: 200,
-    backgroundColor: '#755645',
+    backgroundColor: '#d4a57b',
     borderRadius: 25,
     borderBottomWidth: 1,
     borderColor: 'black',
