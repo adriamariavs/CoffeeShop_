@@ -61,12 +61,6 @@ export const styles = StyleSheet.create({
 
   //Pag Login:
 
-  Login: {
-    fontSize: 15,
-    marginBottom: 50,
-  
-  },
-
   BtnLogin: {
     alignSelf: 'center',
     marginTop: 25,
@@ -86,6 +80,7 @@ export const styles = StyleSheet.create({
    right: 70 ,
    fontWeight: 'bold',
    marginBottom: 40,
+   marginTop: 15,
   },
 
   TelaLogin:{
@@ -134,5 +129,51 @@ export const styles = StyleSheet.create({
     margin: 7
   },
 
+  //Pág Saiba mais
+
+  TextSaiba: {
+   fontSize: 25,
+   fontWeight: 'bold',
+   textAlign: 'center',
+   margin: 15,
+  },
+
+  TextSaibaD: {
+   fontSize: 20,
+   textAlign: 'left',
+   margin: 30,
+   marginTop: 15,
+  },
+  
+  ImgLogoSaiba: {
+   alignItems: 'center',
+  justifyContent: 'center',
+
+  }, 
+
+  BtnSaibaPG: {
+   alignSelf: 'center',
+   marginTop: 15,
+   marginBottom: 30,
+   alignItems: 'center',
+   justifyContent: 'center',
+   height: 40,
+   width: 255,
+   backgroundColor: '#d4a57b',
+   borderRadius: 25,
+  },
+
+  //Página Menu
+  img: {
+    width: '300',
+    height: '200',
+    borderBottomLeftRadius: '20',
+    backgroundColor: "#d4a57b",
+  },
+   header: {
+   height: 150,
+   backgroundColor: '#d4a57b',
+  
+},
 
 });

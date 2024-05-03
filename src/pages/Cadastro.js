@@ -21,7 +21,6 @@ export default function Cadastro() {
           title="Cadastrar"
         />
           </View>
-        
-          </View>
+      </View>
     );
   }

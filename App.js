@@ -1,11 +1,12 @@
+import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { styles } from "./src/style/Styles";
+//Importando Páginas
 import Home from "./src/pages/Home";
 import Login from "./src/pages/Login";
 import Cadastro from "./src/pages/Cadastro";
 import Saiba from "./src/pages/Saiba";
 import Menu from "./src/pages/Menu";
-import { NavigationContainer } from "@react-navigation/native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import { styles } from "./src/style/Styles";
 
 const Drawer = createDrawerNavigator();
 
@@ -20,7 +21,7 @@ export default function App() {
         }} />
         <Drawer.Screen name="Login" component={Login} />
         <Drawer.Screen name="Cadastro" component={Cadastro} />
-        <Drawer.Screen name="Saiba mais" component={Saiba} />
+        <Drawer.Screen name="Saiba" component={Saiba} />
         <Drawer.Screen name="Menu" component={Menu} />
 
       </Drawer.Navigator>
